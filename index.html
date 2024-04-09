@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaMarine</title>
 
-    <!-- Bootstrap CSS/JS -->
+    <!-- Bootstrap CSS/JS/ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
         body{
@@ -19,6 +20,10 @@
         a{
             text-decoration: none;
             color: #000;           
+        }
+
+        i{
+            color: #0081FE;
         }
 
         .header{
@@ -101,6 +106,33 @@
 
         .col-card{
             text-align: -webkit-center;
+        }
+
+        .footer{
+            background-color: #FFF;
+            padding: 3rem 2rem;
+        }
+
+        .logo-footer{
+            width: 20rem;
+        }
+
+        .col-footer{
+            text-align-last: center;
+            align-content: center;
+            row-gap: 1rem;
+            display: grid;
+        }
+
+        .footer-endereco, .footer-telefone{
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-socials{
+            display: flex;
+            justify-content: center;
+            column-gap: 2.3rem;
         }
     </style>
 </head>
@@ -193,7 +225,33 @@
     </main>
 </body>
 
-<footer>
-
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-6 col-footer">
+            <a href="https://aqua-marine-ten.vercel.app">
+                <img src="../aquamarine/images/SiteLogo.png" class="logo-footer" alt="AquaMarine">
+            </a>
+        </div>
+        <div class="col-md-6 col-footer">
+            <div class="footer-endereco">
+                <i class="bi bi-geo-alt-fill"></i>&nbsp;
+                <h6>Av Mackenzie, 905 - Alphaville, Barueri - SP</h6>                
+            </div>
+            <div class="footer-telefone">
+                <i class="bi bi-telephone-fill"></i>&nbsp;
+                <h6>(11) 1234-5678</h6>
+            </div>
+            <div class="footer-socials">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-google"></i>
+                <i class="bi bi-pinterest"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row"></div>
 </footer>
 </html>
