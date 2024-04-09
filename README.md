@@ -17,9 +17,9 @@ Galeria de Fotos: Exibe imagens das tartarugas resgatadas e soltas no mar, mostr
 - Bootstrap
 
 ## Instruções de Uso
-Clone ou baixe este repositório.
-Abra o arquivo index.html em seu navegador da web.
-Explore as diferentes seções do site, conheça os produtos e aprenda mais sobre a causa da preservação das tartarugas marinhas.
+- Clone ou baixe este repositório.
+- Abra o arquivo index.html em seu navegador da web.
+- Explore as diferentes seções do site, conheça os produtos e aprenda mais sobre a causa da preservação das tartarugas marinhas.
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste projeto, fazer suas alterações e enviar para nossos desenvolvedores.
