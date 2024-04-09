@@ -13,6 +13,7 @@
         body{
             background: rgb(0,122,255);
             background: linear-gradient(90deg, rgba(0,122,255,0.5) 0%, rgba(100,210,255,0.5) 35%);
+            overflow-x: hidden;
         }
 
         a{
@@ -40,7 +41,11 @@
             transition: all ease 0.3s;
         }
 
-        h1 {
+        .section-inicial{
+            padding: 1rem 0rem 3rem 0rem;
+        }
+
+        .text-gradient {
             background: linear-gradient(#5433FF, #20BDFF, #A5FECB);
             background: linear-gradient(90deg, #5433FF, #20BDFF, #A5FECB);
             -webkit-background-clip: text;
@@ -70,6 +75,33 @@
             color: #000;
             transition-duration: 0.4s;
         }
+
+        .section-turtle{
+            background-image: url(../AquaMarine/images/BannerTurtle.png);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .section-solucao{
+            background-color: #F7F7F7;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .card-img-top{
+            width: 40%;
+            align-self: center;
+            padding: 1rem;
+        }
+
+        .card-title{
+            color: #058CEB;
+            font-weight: bold;
+        }
+
+        .col-card{
+            text-align: -webkit-center;
+        }
     </style>
 </head>
 
@@ -91,22 +123,73 @@
 
 <body>
     <main>
-        <div class="row">
-            <div class="col-md-6" style="align-content: center; padding-left: 12rem;">
-                    <h1 style="font-size: 4rem;"><b>AQUAMARINE</b></h1>
-                    <h3>CONSERVANDO OCEACNOS</h3>
-                    <br><br>
-                    <h6><i>Na compra de um colar, uma nova tartaruga é solta no mar com o nome que você der à ela. Rasteie e veja informações do seu pet marinho a qualquer momento!</i></h6>
-                    <br><br>
-                    <div class="row">
-                        <div class="col-md-4"><button class="btn-inicio btn-saiba-mais">Saiba Mais</button></div>
-                        <div class="col-md-4"><button class="btn-inicio btn-comprar">Comprar</button></div>
+        <section class="section-inicial">
+            <div class="row">
+                <div class="col-md-6" style="align-content: center; padding-left: 12rem;">
+                        <h1 style="font-size: 4rem;" class="text-gradient"><b>AQUAMARINE</b></h1>
+                        <h3>CONSERVANDO OCEACNOS</h3>
+                        <br><br>
+                        <h6><i>Na compra de um colar, uma nova tartaruga é solta no mar com o nome que você der à ela. Rasteie e veja informações do seu pet marinho a qualquer momento!</i></h6>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-4"><button class="btn-inicio btn-saiba-mais">Saiba Mais</button></div>
+                            <div class="col-md-4"><button class="btn-inicio btn-comprar">Comprar</button></div>
+                        </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../AquaMarine/images/ImagemOceanoInicio.png" alt="" width="80%">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-turtle">
+            <div class="row">
+                <h1 class="text-gradient"><b>AJUDANDO A CONSERVAR OCEANOS!</b></h1>
+                <br><br><br><br>
+                <h4 style="color: #FFF;">Somos uma empresa que tem como missão ajudar a conservar os Oceanos!<br>
+                    O nosso principal objetivo é mostrar o fundo do mar para as pessoas. E fazemos isso através do nosso projeto com os colares<br>
+                    feitos com materiais reciclados do fundo do mar com a possibilidade de rastrear uma nova tartaruga solta.</h4>
+            </div>
+        </section>
+    
+        <section class="section-solucao">
+            <div class="row">
+                <h1><b>A solução da AquaMarine</b></h1>
+                <br><br>
+                <h6 style="color: #058CEB;">A boa notícia é que nós ainda podemos recuperar a abundância dos oceanos. A AquaMarine foi criada para<br>
+                    identificar soluções práticas e fazer com que elas sejam implementadas por meio de:</h6>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-card">
+                    <div class="card" style="width: 80%;">
+                        <img src="../AquaMarine/images/CardCampanhas.png" class="card-img-top" alt="Campanhas">
+                        <div class="card-body">
+                            <h5 class="card-title">CAMPANHAS</h5>
+                            <p class="card-text">Nós investimos nossos recursos em campanhas estratégicas, focadas em alcançar objetivos mensuráveis que ajudarão a proteger e restaurar a abundância dos oceanos em cada país.</p>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-4 col-card">
+                    <div class="card" style="width: 80%;">
+                        <img src="../AquaMarine/images/CardEmbasamento.png" class="card-img-top" alt="Embasamento Científico">
+                        <div class="card-body">
+                            <h5 class="card-title">EMBASAMENTO CIENTÍFICO</h5>
+                            <p class="card-text">Nós acreditamos na importância do conhecimento científico para identificar problemas e encontrar soluções para os oceanos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-card">
+                    <div class="card" style="width: 80%;">
+                        <img src="../AquaMarine/images/CardReciclagem.png" class="card-img-top" alt="Reciclagem">
+                        <div class="card-body">
+                            <h5 class="card-title">RECICLAGEM</h5>
+                            <p class="card-text">Como uma ONG dedicada à preservação dos oceanos, enfatizamos a importância crucial da reciclagem dos resíduos plásticos. A reciclagem reduz a poluição marinha, protege a vida marinha e os ecossistemas costeiros, promove a economia circular e contribui para um futuro mais sustentável.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="../images/ImagemOceanoInicio.png" alt="" width="80%">
-            </div>
-        </div>
+        </section>        
     </main>
 </body>
 
