@@ -39,6 +39,37 @@
             transform: scale(1.2);
             transition: all ease 0.3s;
         }
+
+        h1 {
+            background: linear-gradient(#5433FF, #20BDFF, #A5FECB);
+            background: linear-gradient(90deg, #5433FF, #20BDFF, #A5FECB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-inicio:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .btn-saiba-mais{
+            background-color: #0A84FF;
+            padding: 16px;
+            width: 10rem;
+            border-radius: 8px;
+            border: none;
+            color: #FFF;
+            transition-duration: 0.4s;
+        }
+
+        .btn-comprar{
+            background-color: transparent;
+            padding: 16px;
+            width: 13rem;
+            border-radius: 8px;
+            border: 2px solid #0A84FF;
+            color: #000;
+            transition-duration: 0.4s;
+        }
     </style>
 </head>
 
@@ -59,7 +90,24 @@
 </header>
 
 <body>
-    
+    <main>
+        <div class="row">
+            <div class="col-md-6" style="align-content: center; padding-left: 12rem;">
+                    <h1 style="font-size: 4rem;"><b>AQUAMARINE</b></h1>
+                    <h3>CONSERVANDO OCEACNOS</h3>
+                    <br><br>
+                    <h6><i>Na compra de um colar, uma nova tartaruga é solta no mar com o nome que você der à ela. Rasteie e veja informações do seu pet marinho a qualquer momento!</i></h6>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-4"><button class="btn-inicio btn-saiba-mais">Saiba Mais</button></div>
+                        <div class="col-md-4"><button class="btn-inicio btn-comprar">Comprar</button></div>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <img src="../AquaMarine/images/ImagemOceanoInicio.png" alt="" width="80%">
+            </div>
+        </div>
+    </main>
 </body>
 
 <footer>
