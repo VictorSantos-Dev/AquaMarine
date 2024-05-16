@@ -4,7 +4,7 @@
 
 body{
     background: rgb(0,122,255);
-    background: linear-gradient(90deg, rgba(0,122,255,0.5) 0%, rgba(100,210,255,0.5) 35%);
+    background: linear-gradient(90deg, rgb(183 244 255 / 50%) 0%, rgb(0 206 255 / 15%) 35%);
     overflow-x: hidden;
 }
 
@@ -70,33 +70,6 @@ i{
     border: 2px solid #0A84FF;
     color: #000;
     transition-duration: 0.4s;
-}
-
-.section-turtle{
-    background-image: url(https://aqua-marine-ten.vercel.app/images/BannerTurtle.png);
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.section-solucao{
-    background-color: #F7F7F7;
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.card-img-top{
-    width: 40%;
-    align-self: center;
-    padding: 1rem;
-}
-
-.card-title{
-    color: #058CEB;
-    font-weight: bold;
-}
-
-.col-card{
-    text-align: -webkit-center;
 }
 
 .footer{
