@@ -52,24 +52,12 @@ i{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btn-saiba-mais{
-    background-color: #0A84FF;
-    padding: 16px;
-    width: 10rem;
-    border-radius: 8px;
-    border: none;
-    color: #FFF;
-    transition-duration: 0.4s;
+.titulo{
+    font-weight: 700;
 }
 
-.btn-comprar{
-    background-color: transparent;
-    padding: 16px;
-    width: 13rem;
-    border-radius: 8px;
-    border: 2px solid #0A84FF;
-    color: #000;
-    transition-duration: 0.4s;
+.subtitulo{
+    margin-bottom: 3rem;
 }
 
 .footer{

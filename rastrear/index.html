@@ -13,6 +13,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style_rastrear.css">
 
+    <!-- JS -->
+    <script src="../scripts/script.js"></script>
+
     <style>
         
     </style>
@@ -22,13 +25,13 @@
     <div class="row">
         <div class="col-md-8 images-header">
             <a href="https://aqua-marine-ten.vercel.app">
-                <img src="https://aqua-marine-ten.vercel.app/images/SiteLogo.png" class="logo-header" alt="AquaMarine">
+                <img src="../images/SiteLogo.png" class="logo-header" alt="AquaMarine">
             </a>
         </div>
         <div class="col-md-4 links-header">
-            <a href="./" class="link-header">Sobre</a>
+            <a href="../sobre/" class="link-header">Sobre</a>
             <a href="../quem-somos/" class="link-header">Quem Somos</a>
-            <a href="../rastrear/" class="link-header">Rastrear</a>
+            <a href="./" class="link-header">Rastrear</a>
             <a href="../contato/" class="link-header">Contato</a>
         </div>
     </div>
@@ -37,19 +40,28 @@
 <body>
     <main>
         <section class="section-inicial">
-            <div class="row" style="justify-content: center;">
-                <div class="col-md-10" style="background-color: ghostwhite; padding: 3rem; border-radius: 1rem">
+            <div class="row" style="justify-content: center; text-align: center;">
+                <h2 class="titulo">RASTREIO</h2>
+                <h6 class="subtitulo">
+                    Digite o código de rastreio da sua tartaruga para rastreá-la.<br>
+                    O código pode ser encontrado no colar adquirido.
+                </h6>
+                <div class="col-md-10" style="background-color: #f8f8ff; padding: 3rem; border-radius: 1rem; min-height: 200px;">
                     <div class="row" style="justify-content: center; text-align: center;">
                         <label for="cod_rastreio"><b>CÓDIGO DE RASTREIO:</b></label>
-                        <input type="text" id="cod_rastreio" name="cod_rastreio" class="form-control" style="width: 50%;">
+                        <input type="text" id="cod_rastreio" name="cod_rastreio" class="form-control" maxlength="11" style="width: 50%; margin-right: 1rem;">
+                        <input type="button" value="RASTREAR" onclick="rastrear(document.getElementById('cod_rastreio').value)" class="btn btn-primary" style="width: 10%;">
                     </div>
                     <br>
-                    <div class="row">
+                    <div class="col-md-12" id="turtle_not_found" style="text-align: center; display: none;">
+                        <h3>Tartaruga não encontrada. Verifique o código de rasreio no colar adquirido.</h3>
+                    </div>
+                    <div class="row" id="info_turtle" style="display: none;">
                         <div class="col-md-6">
-                            <img src="../images/localizacao.png" alt="Localização da tartaruga" srcset="../images/localizacao.png">
+                            <img src="../images/localizacao.png" alt="Localização da tartaruga" width="90%" srcset="../images/localizacao.png">
                         </div>
                         <div class="col-md-6">
-                            <img src="../images/info.png" alt="" srcset="../images/info.png">
+                            <img src="../images/info.png" alt="" width="90%" srcset="../images/info.png">
                         </div>
                     </div>
                     
@@ -63,7 +75,7 @@
     <div class="row">
         <div class="col-md-6 col-footer">
             <a href="https://aqua-marine-ten.vercel.app">
-                <img src="https://aqua-marine-ten.vercel.app/images/SiteLogo.png" class="logo-footer" alt="AquaMarine">
+                <img src="../images/SiteLogo.png" class="logo-footer" alt="AquaMarine">
             </a>
         </div>
         <div class="col-md-6 col-footer">
